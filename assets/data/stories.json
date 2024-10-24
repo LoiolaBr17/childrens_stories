@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "A Aventura dos Guardiões das Estrelas",
+    "imagebanner": "assets/images/storyBanner1.webp",
+    "category": {
+      "id": 1,
+      "title": "Aventura"
+    },
+    "content": [
+      "Em uma pequena vila cercada por montanhas e rios brilhantes, viviam dois irmãos chamados Léo e Clara. Eles adoravam explorar o mundo ao redor e, um dia, ao caminhar perto de um antigo farol, descobriram um mapa escondido em uma garrafa que flutuava no mar. O mapa mostrava um caminho que levava a um lugar misterioso chamado 'O Reino das Estrelas'. Diziam as lendas que, nesse reino, as estrelas no céu eram protegidas por guardiões secretos. Léo e Clara, com seus corações aventureiros, decidiram seguir o mapa e embarcar nessa jornada mágica.",
+      "O caminho foi difícil desde o início. O mapa indicava que eles deveriam passar por uma caverna encantada que mudava de forma a cada noite. Dentro da caverna, as paredes brilhavam com cristais coloridos, e o ar era cheio de canções suaves. No entanto, para passar, eles precisavam resolver um enigma: 'Qual é a coisa que quanto mais se tira, maior fica?' Clara, pensativa, respondeu: 'Um buraco!' Assim, a caverna abriu caminho para os irmãos seguirem adiante.",
+      "Depois de saírem da caverna, Léo e Clara encontraram uma floresta encantada onde as árvores sussurravam segredos e as plantas floresciam com cores mágicas. Lá, eles conheceram um velho elfo chamado Tirion, que lhes explicou que o Reino das Estrelas estava em perigo. O brilho das estrelas estava desaparecendo porque os guardiões haviam sido capturados por uma bruxa malvada que queria apagar o céu. Para resgatar os guardiões, Léo e Clara precisariam encontrar três chaves mágicas espalhadas pelo reino.",
+      "Determinados a salvar as estrelas, os irmãos começaram sua busca. A primeira chave estava escondida em uma montanha onde os ventos eram tão fortes que quase os derrubaram. Mas com coragem e determinação, subiram até o topo e encontraram a chave presa a uma pedra mágica. Para libertá-la, precisaram cantar uma canção antiga ensinada pelo elfo Tirion. Quando a música tocou o ar, a chave se soltou e voou até as mãos de Léo.",
+      "A segunda chave estava em um lago profundo, protegido por um grande dragão de água. No início, o dragão parecia ameaçador, mas Clara percebeu que ele estava apenas com medo. Com palavras gentis, ela conversou com o dragão, que revelou que a bruxa o havia encantado. Ao ouvir a verdade, o dragão, grato pela compreensão, mergulhou no lago e trouxe a segunda chave para eles.",
+      "A terceira e última chave estava escondida no coração de uma floresta escura, onde a bruxa malvada havia erguido um castelo. Léo e Clara, com coragem, entraram no castelo e enfrentaram a bruxa. Ela lançou feitiços para tentar impedi-los, mas os irmãos, usando as duas chaves mágicas que já haviam encontrado, invocaram o poder das estrelas. Uma luz intensa envolveu a bruxa, quebrando seus feitiços e revelando a última chave escondida em seu cetro.",
+      "Com as três chaves em mãos, Léo e Clara voltaram ao Reino das Estrelas. No centro do reino, uma enorme porta de ouro brilhava. As chaves encaixavam-se perfeitamente, e quando a porta se abriu, os guardiões das estrelas foram libertados. A luz das estrelas voltou a brilhar intensamente no céu, iluminando a vila e o mundo inteiro.",
+      "Os guardiões, gratos pela bravura dos irmãos, ofereceram a eles um desejo. Clara desejou que o céu nunca mais ficasse sem estrelas, e Léo desejou que todas as aventuras trouxessem paz e alegria a quem as vivesse. Os guardiões realizaram os desejos, e Léo e Clara voltaram para casa como verdadeiros heróis.",
+      "Desde então, eles se tornaram os Guardiões das Estrelas honorários, prontos para ajudar sempre que o céu estivesse em perigo. E, à noite, enquanto olhavam para as estrelas brilhando acima de suas cabeças, sabiam que a magia nunca os abandonaria."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "A Jornada dos Exploradores do Tempo",
+    "imagebanner": "assets/images/storyBanner2.webp",
+    "category": {
+      "id": 1,
+      "title": "Aventura"
+    },
+    "content": [
+      "No topo de uma colina, ao cair da noite, estavam dois irmãos curiosos, Alice e Tom. Com um mapa antigo nas mãos e uma mochila cheia de suprimentos, eles estavam prontos para sua maior aventura. Seu destino? Uma misteriosa torre do tempo, escondida em um vale distante, onde diziam que o tempo poderia ser controlado.",
+      "Seguindo o mapa, Alice e Tom passaram por florestas mágicas, onde as árvores sussurravam segredos e as flores brilhavam ao toque do sol. Porém, no caminho, encontraram um relógio gigante que só poderia ser aberto com um enigma. Tom, olhando para o céu, lembrou-se das palavras do avô: 'O tempo nunca para, mas nós podemos aprender a viver cada segundo.' Com essa resposta, o relógio se abriu, revelando o caminho para a torre.",
+      "Ao chegarem à torre, uma escadaria infinita os aguardava. Cada degrau era um desafio. Em um andar, enfrentaram tempestades de vento; no outro, desvendaram armadilhas de areia movediça. Mas nada os deteria. A cada obstáculo, aprendiam mais sobre coragem e trabalho em equipe.",
+      "No topo da torre, eles encontraram um portal brilhante. Sabiam que essa era a chave para o controle do tempo. Mas ao tentarem ativá-lo, uma criatura guardiã, metade dragão, metade relógio, apareceu. Com sabedoria, Alice falou: 'Não queremos mudar o tempo, só queremos protegê-lo.' O guardião, comovido pela pureza de suas intenções, permitiu que usassem o portal para restaurar o equilíbrio do tempo.",
+      "Depois de uma jornada longa e desafiadora, Alice e Tom voltaram para casa com um novo entendimento: o verdadeiro poder não está em controlar o tempo, mas em viver cada momento com alegria e aventura."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "teste",
+    "imagebanner": "assets/images/storyBanner1.webp",
+    "category": {
+      "id": 2,
+      "title": "Medo"
+    },
+    "content": [
+      "Em uma pequena vila cercada por montanhas e rios brilhantes, viviam dois irmãos chamados Léo e Clara. Eles adoravam explorar o mundo ao redor e, um dia, ao caminhar perto de um antigo farol, descobriram um mapa escondido em uma garrafa que flutuava no mar. O mapa mostrava um caminho que levava a um lugar misterioso chamado 'O Reino das Estrelas'. Diziam as lendas que, nesse reino, as estrelas no céu eram protegidas por guardiões secretos. Léo e Clara, com seus corações aventureiros, decidiram seguir o mapa e embarcar nessa jornada mágica.",
+      "O caminho foi difícil desde o início. O mapa indicava que eles deveriam passar por uma caverna encantada que mudava de forma a cada noite. Dentro da caverna, as paredes brilhavam com cristais coloridos, e o ar era cheio de canções suaves. No entanto, para passar, eles precisavam resolver um enigma: 'Qual é a coisa que quanto mais se tira, maior fica?' Clara, pensativa, respondeu: 'Um buraco!' Assim, a caverna abriu caminho para os irmãos seguirem adiante.",
+      "Depois de saírem da caverna, Léo e Clara encontraram uma floresta encantada onde as árvores sussurravam segredos e as plantas floresciam com cores mágicas. Lá, eles conheceram um velho elfo chamado Tirion, que lhes explicou que o Reino das Estrelas estava em perigo. O brilho das estrelas estava desaparecendo porque os guardiões haviam sido capturados por uma bruxa malvada que queria apagar o céu. Para resgatar os guardiões, Léo e Clara precisariam encontrar três chaves mágicas espalhadas pelo reino.",
+      "Determinados a salvar as estrelas, os irmãos começaram sua busca. A primeira chave estava escondida em uma montanha onde os ventos eram tão fortes que quase os derrubaram. Mas com coragem e determinação, subiram até o topo e encontraram a chave presa a uma pedra mágica. Para libertá-la, precisaram cantar uma canção antiga ensinada pelo elfo Tirion. Quando a música tocou o ar, a chave se soltou e voou até as mãos de Léo.",
+      "A segunda chave estava em um lago profundo, protegido por um grande dragão de água. No início, o dragão parecia ameaçador, mas Clara percebeu que ele estava apenas com medo. Com palavras gentis, ela conversou com o dragão, que revelou que a bruxa o havia encantado. Ao ouvir a verdade, o dragão, grato pela compreensão, mergulhou no lago e trouxe a segunda chave para eles.",
+      "A terceira e última chave estava escondida no coração de uma floresta escura, onde a bruxa malvada havia erguido um castelo. Léo e Clara, com coragem, entraram no castelo e enfrentaram a bruxa. Ela lançou feitiços para tentar impedi-los, mas os irmãos, usando as duas chaves mágicas que já haviam encontrado, invocaram o poder das estrelas. Uma luz intensa envolveu a bruxa, quebrando seus feitiços e revelando a última chave escondida em seu cetro.",
+      "Com as três chaves em mãos, Léo e Clara voltaram ao Reino das Estrelas. No centro do reino, uma enorme porta de ouro brilhava. As chaves encaixavam-se perfeitamente, e quando a porta se abriu, os guardiões das estrelas foram libertados. A luz das estrelas voltou a brilhar intensamente no céu, iluminando a vila e o mundo inteiro.",
+      "Os guardiões, gratos pela bravura dos irmãos, ofereceram a eles um desejo. Clara desejou que o céu nunca mais ficasse sem estrelas, e Léo desejou que todas as aventuras trouxessem paz e alegria a quem as vivesse. Os guardiões realizaram os desejos, e Léo e Clara voltaram para casa como verdadeiros heróis.",
+      "Desde então, eles se tornaram os Guardiões das Estrelas honorários, prontos para ajudar sempre que o céu estivesse em perigo. E, à noite, enquanto olhavam para as estrelas brilhando acima de suas cabeças, sabiam que a magia nunca os abandonaria."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "teste 3",
+    "imagebanner": "assets/images/storyBanner1.webp",
+    "category": {
+      "id": 2,
+      "title": "Medo"
+    },
+    "content": [
+      "Em uma pequena vila cercada por montanhas e rios brilhantes, viviam dois irmãos chamados Léo e Clara. Eles adoravam explorar o mundo ao redor e, um dia, ao caminhar perto de um antigo farol, descobriram um mapa escondido em uma garrafa que flutuava no mar. O mapa mostrava um caminho que levava a um lugar misterioso chamado 'O Reino das Estrelas'. Diziam as lendas que, nesse reino, as estrelas no céu eram protegidas por guardiões secretos. Léo e Clara, com seus corações aventureiros, decidiram seguir o mapa e embarcar nessa jornada mágica.",
+      "O caminho foi difícil desde o início. O mapa indicava que eles deveriam passar por uma caverna encantada que mudava de forma a cada noite. Dentro da caverna, as paredes brilhavam com cristais coloridos, e o ar era cheio de canções suaves. No entanto, para passar, eles precisavam resolver um enigma: 'Qual é a coisa que quanto mais se tira, maior fica?' Clara, pensativa, respondeu: 'Um buraco!' Assim, a caverna abriu caminho para os irmãos seguirem adiante.",
+      "Depois de saírem da caverna, Léo e Clara encontraram uma floresta encantada onde as árvores sussurravam segredos e as plantas floresciam com cores mágicas. Lá, eles conheceram um velho elfo chamado Tirion, que lhes explicou que o Reino das Estrelas estava em perigo. O brilho das estrelas estava desaparecendo porque os guardiões haviam sido capturados por uma bruxa malvada que queria apagar o céu. Para resgatar os guardiões, Léo e Clara precisariam encontrar três chaves mágicas espalhadas pelo reino.",
+      "Determinados a salvar as estrelas, os irmãos começaram sua busca. A primeira chave estava escondida em uma montanha onde os ventos eram tão fortes que quase os derrubaram. Mas com coragem e determinação, subiram até o topo e encontraram a chave presa a uma pedra mágica. Para libertá-la, precisaram cantar uma canção antiga ensinada pelo elfo Tirion. Quando a música tocou o ar, a chave se soltou e voou até as mãos de Léo.",
+      "A segunda chave estava em um lago profundo, protegido por um grande dragão de água. No início, o dragão parecia ameaçador, mas Clara percebeu que ele estava apenas com medo. Com palavras gentis, ela conversou com o dragão, que revelou que a bruxa o havia encantado. Ao ouvir a verdade, o dragão, grato pela compreensão, mergulhou no lago e trouxe a segunda chave para eles.",
+      "A terceira e última chave estava escondida no coração de uma floresta escura, onde a bruxa malvada havia erguido um castelo. Léo e Clara, com coragem, entraram no castelo e enfrentaram a bruxa. Ela lançou feitiços para tentar impedi-los, mas os irmãos, usando as duas chaves mágicas que já haviam encontrado, invocaram o poder das estrelas. Uma luz intensa envolveu a bruxa, quebrando seus feitiços e revelando a última chave escondida em seu cetro.",
+      "Com as três chaves em mãos, Léo e Clara voltaram ao Reino das Estrelas. No centro do reino, uma enorme porta de ouro brilhava. As chaves encaixavam-se perfeitamente, e quando a porta se abriu, os guardiões das estrelas foram libertados. A luz das estrelas voltou a brilhar intensamente no céu, iluminando a vila e o mundo inteiro.",
+      "Os guardiões, gratos pela bravura dos irmãos, ofereceram a eles um desejo. Clara desejou que o céu nunca mais ficasse sem estrelas, e Léo desejou que todas as aventuras trouxessem paz e alegria a quem as vivesse. Os guardiões realizaram os desejos, e Léo e Clara voltaram para casa como verdadeiros heróis.",
+      "Desde então, eles se tornaram os Guardiões das Estrelas honorários, prontos para ajudar sempre que o céu estivesse em perigo. E, à noite, enquanto olhavam para as estrelas brilhando acima de suas cabeças, sabiam que a magia nunca os abandonaria."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "teste 4",
+    "imagebanner": "assets/images/storyBanner1.webp",
+    "category": {
+      "id": 2,
+      "title": "Medo"
+    },
+    "content": [
+      "Em uma pequena vila cercada por montanhas e rios brilhantes, viviam dois irmãos chamados Léo e Clara. Eles adoravam explorar o mundo ao redor e, um dia, ao caminhar perto de um antigo farol, descobriram um mapa escondido em uma garrafa que flutuava no mar. O mapa mostrava um caminho que levava a um lugar misterioso chamado 'O Reino das Estrelas'. Diziam as lendas que, nesse reino, as estrelas no céu eram protegidas por guardiões secretos. Léo e Clara, com seus corações aventureiros, decidiram seguir o mapa e embarcar nessa jornada mágica.",
+      "O caminho foi difícil desde o início. O mapa indicava que eles deveriam passar por uma caverna encantada que mudava de forma a cada noite. Dentro da caverna, as paredes brilhavam com cristais coloridos, e o ar era cheio de canções suaves. No entanto, para passar, eles precisavam resolver um enigma: 'Qual é a coisa que quanto mais se tira, maior fica?' Clara, pensativa, respondeu: 'Um buraco!' Assim, a caverna abriu caminho para os irmãos seguirem adiante.",
+      "Depois de saírem da caverna, Léo e Clara encontraram uma floresta encantada onde as árvores sussurravam segredos e as plantas floresciam com cores mágicas. Lá, eles conheceram um velho elfo chamado Tirion, que lhes explicou que o Reino das Estrelas estava em perigo. O brilho das estrelas estava desaparecendo porque os guardiões haviam sido capturados por uma bruxa malvada que queria apagar o céu. Para resgatar os guardiões, Léo e Clara precisariam encontrar três chaves mágicas espalhadas pelo reino.",
+      "Determinados a salvar as estrelas, os irmãos começaram sua busca. A primeira chave estava escondida em uma montanha onde os ventos eram tão fortes que quase os derrubaram. Mas com coragem e determinação, subiram até o topo e encontraram a chave presa a uma pedra mágica. Para libertá-la, precisaram cantar uma canção antiga ensinada pelo elfo Tirion. Quando a música tocou o ar, a chave se soltou e voou até as mãos de Léo.",
+      "A segunda chave estava em um lago profundo, protegido por um grande dragão de água. No início, o dragão parecia ameaçador, mas Clara percebeu que ele estava apenas com medo. Com palavras gentis, ela conversou com o dragão, que revelou que a bruxa o havia encantado. Ao ouvir a verdade, o dragão, grato pela compreensão, mergulhou no lago e trouxe a segunda chave para eles.",
+      "A terceira e última chave estava escondida no coração de uma floresta escura, onde a bruxa malvada havia erguido um castelo. Léo e Clara, com coragem, entraram no castelo e enfrentaram a bruxa. Ela lançou feitiços para tentar impedi-los, mas os irmãos, usando as duas chaves mágicas que já haviam encontrado, invocaram o poder das estrelas. Uma luz intensa envolveu a bruxa, quebrando seus feitiços e revelando a última chave escondida em seu cetro.",
+      "Com as três chaves em mãos, Léo e Clara voltaram ao Reino das Estrelas. No centro do reino, uma enorme porta de ouro brilhava. As chaves encaixavam-se perfeitamente, e quando a porta se abriu, os guardiões das estrelas foram libertados. A luz das estrelas voltou a brilhar intensamente no céu, iluminando a vila e o mundo inteiro.",
+      "Os guardiões, gratos pela bravura dos irmãos, ofereceram a eles um desejo. Clara desejou que o céu nunca mais ficasse sem estrelas, e Léo desejou que todas as aventuras trouxessem paz e alegria a quem as vivesse. Os guardiões realizaram os desejos, e Léo e Clara voltaram para casa como verdadeiros heróis.",
+      "Desde então, eles se tornaram os Guardiões das Estrelas honorários, prontos para ajudar sempre que o céu estivesse em perigo. E, à noite, enquanto olhavam para as estrelas brilhando acima de suas cabeças, sabiam que a magia nunca os abandonaria."
+    ]
+  }
+]
