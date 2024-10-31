@@ -1,3 +1,4 @@
+import 'package:childrens_stories/app/core/extensions/size_extensions.dart';
 import 'package:childrens_stories/app/core/state/base_state.dart';
 import 'package:childrens_stories/app/modules/home/cubit/home_cubit.dart';
 import 'package:childrens_stories/app/modules/home/widgets/home_list.dart';
@@ -25,7 +26,7 @@ class _HomePageState extends BaseState<HomePage, HomeCubit> {
       case 1:
         return 'Aventura';
       case 2:
-        return 'Medo';
+        return 'Morais';
       default:
         return 'Desconhecida'; // Caso de fallback para IDs inesperados
     }
@@ -43,29 +44,65 @@ class _HomePageState extends BaseState<HomePage, HomeCubit> {
             return const Center(child: CircularProgressIndicator());
           } else if (state.status == HomeStatus.loaded &&
               state.categorizedStories.isNotEmpty) {
-            // Criar um ListView apenas com as categorias e suas histórias
             final categories = state.categorizedStories.entries.toList();
 
             return ListView.builder(
-              itemCount:
-                  categories.length, // Duas categorias, portanto 2 HomeList
+              itemCount: categories.length + 1, // Adiciona 1 para o banner
               itemBuilder: (context, index) {
-                final categoryId = categories[index].key;
-                final stories = categories[index].value;
-
-                // Apenas criar HomeList para categorias que possuem histórias
-                if (stories.isNotEmpty) {
+                if (index == 0) {
+                  // Adiciona o banner no topo
                   return Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
-                    child: HomeList(
-                      stories: stories, // Histórias da categoria
-                      title: getCategoryTitle(
-                          categoryId), // Nome da categoria com base no ID
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: context.percentHeight(.3),
+                          width: context.percentWidth(1),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                              image:
+                                  AssetImage('assets/images/home_banner.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        ElevatedButton(
+                          onPressed: () {},
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(
+                                  12), // Defina o raio desejado aqui
+                            ),
+                          ),
+                          child: Text(
+                            'Liberte sua imaginação',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   );
                 } else {
-                  return const SizedBox
-                      .shrink(); // Não exibir nada se não houver histórias
+                  final categoryId = categories[index - 1].key;
+                  final stories = categories[index - 1].value;
+
+                  if (stories.isNotEmpty) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      child: HomeList(
+                        stories: stories,
+                        title: getCategoryTitle(categoryId),
+                      ),
+                    );
+                  } else {
+                    return const SizedBox.shrink();
+                  }
                 }
               },
             );

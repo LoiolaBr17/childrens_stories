@@ -1,6 +1,6 @@
 import 'package:childrens_stories/app/core/extensions/size_extensions.dart';
+import 'package:childrens_stories/app/modules/story/story_module.dart';
 import 'package:flutter/material.dart';
-
 import '../../../data/models/story_model.dart';
 
 class HomeCard extends StatelessWidget {
@@ -15,7 +15,28 @@ class HomeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, '/story', arguments: story);
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => FutureBuilder<Widget>(
+              future: StoryModule.getPage(
+                  story), // Carrega a página de forma assíncrona
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.done) {
+                  if (snapshot.hasData) {
+                    return snapshot.data!;
+                  } else {
+                    return const Center(
+                      child: Text("Erro ao carregar a história"),
+                    );
+                  }
+                } else {
+                  return const Center(child: CircularProgressIndicator());
+                }
+              },
+            ),
+          ),
+        );
       },
       child: Container(
         width: context.percentWidth(0.4),

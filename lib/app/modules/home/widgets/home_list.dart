@@ -24,7 +24,7 @@ class HomeList extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 10.0),
             child: Text(
               title,
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
             ),
           ),
           SingleChildScrollView(

@@ -41,7 +41,7 @@
     "imagebanner": "assets/images/storyBanner1.webp",
     "category": {
       "id": 2,
-      "title": "Medo"
+      "title": "Morais"
     },
     "content": [
       "Em uma pequena vila cercada por montanhas e rios brilhantes, viviam dois irmãos chamados Léo e Clara. Eles adoravam explorar o mundo ao redor e, um dia, ao caminhar perto de um antigo farol, descobriram um mapa escondido em uma garrafa que flutuava no mar. O mapa mostrava um caminho que levava a um lugar misterioso chamado 'O Reino das Estrelas'. Diziam as lendas que, nesse reino, as estrelas no céu eram protegidas por guardiões secretos. Léo e Clara, com seus corações aventureiros, decidiram seguir o mapa e embarcar nessa jornada mágica.",
@@ -61,7 +61,7 @@
     "imagebanner": "assets/images/storyBanner1.webp",
     "category": {
       "id": 2,
-      "title": "Medo"
+      "title": "Morais"
     },
     "content": [
       "Em uma pequena vila cercada por montanhas e rios brilhantes, viviam dois irmãos chamados Léo e Clara. Eles adoravam explorar o mundo ao redor e, um dia, ao caminhar perto de um antigo farol, descobriram um mapa escondido em uma garrafa que flutuava no mar. O mapa mostrava um caminho que levava a um lugar misterioso chamado 'O Reino das Estrelas'. Diziam as lendas que, nesse reino, as estrelas no céu eram protegidas por guardiões secretos. Léo e Clara, com seus corações aventureiros, decidiram seguir o mapa e embarcar nessa jornada mágica.",
@@ -81,7 +81,7 @@
     "imagebanner": "assets/images/storyBanner1.webp",
     "category": {
       "id": 2,
-      "title": "Medo"
+      "title": "Morais"
     },
     "content": [
       "Em uma pequena vila cercada por montanhas e rios brilhantes, viviam dois irmãos chamados Léo e Clara. Eles adoravam explorar o mundo ao redor e, um dia, ao caminhar perto de um antigo farol, descobriram um mapa escondido em uma garrafa que flutuava no mar. O mapa mostrava um caminho que levava a um lugar misterioso chamado 'O Reino das Estrelas'. Diziam as lendas que, nesse reino, as estrelas no céu eram protegidas por guardiões secretos. Léo e Clara, com seus corações aventureiros, decidiram seguir o mapa e embarcar nessa jornada mágica.",
@@ -93,6 +93,44 @@
       "Com as três chaves em mãos, Léo e Clara voltaram ao Reino das Estrelas. No centro do reino, uma enorme porta de ouro brilhava. As chaves encaixavam-se perfeitamente, e quando a porta se abriu, os guardiões das estrelas foram libertados. A luz das estrelas voltou a brilhar intensamente no céu, iluminando a vila e o mundo inteiro.",
       "Os guardiões, gratos pela bravura dos irmãos, ofereceram a eles um desejo. Clara desejou que o céu nunca mais ficasse sem estrelas, e Léo desejou que todas as aventuras trouxessem paz e alegria a quem as vivesse. Os guardiões realizaram os desejos, e Léo e Clara voltaram para casa como verdadeiros heróis.",
       "Desde então, eles se tornaram os Guardiões das Estrelas honorários, prontos para ajudar sempre que o céu estivesse em perigo. E, à noite, enquanto olhavam para as estrelas brilhando acima de suas cabeças, sabiam que a magia nunca os abandonaria."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "O Despertar do Dragão do Vale",
+    "imagebanner": "assets/images/storyBanner3.webp",
+    "category": {
+      "id": 1,
+      "title": "Aventura"
+    },
+    "content": [
+      "Em um vale cercado por montanhas rochosas e rios cristalinos, existia uma antiga lenda sobre um dragão adormecido que guardava um tesouro místico. Dois amigos corajosos, Lucas e Sofia, decidiram explorar o vale depois de encontrar um medalhão que parecia apontar para o esconderijo do dragão.",
+      "Com o medalhão nas mãos, Lucas e Sofia seguiram as pistas que os levaram a uma ponte suspensa sobre um desfiladeiro profundo. Ao atravessar a ponte, eles ouviram um som misterioso vindo de uma caverna no alto da montanha.",
+      "Dentro da caverna, descobriram paredes cobertas por runas brilhantes e uma porta que só poderia ser aberta se recitassem as palavras mágicas inscritas no medalhão. Lucas, com confiança, repetiu as palavras, e a porta se abriu, revelando uma passagem para o coração do vale.",
+      "Seguindo a passagem, eles chegaram a um lago escondido, onde o reflexo do dragão adormecido podia ser visto nas águas profundas. No entanto, para acordá-lo e pedir ajuda, precisavam encontrar o 'Cristal do Despertar', escondido nas profundezas da floresta encantada.",
+      "A floresta era cheia de criaturas mágicas que os ajudaram a localizar o cristal. Finalmente, com o Cristal do Despertar em mãos, Lucas e Sofia voltaram ao lago e o posicionaram na margem, despertando o dragão.",
+      "O dragão, imponente e antigo, revelou-se um guardião do vale. Grato aos jovens por restaurarem o cristal, ele lhes concedeu um desejo. Sofia desejou que o vale estivesse sempre protegido, e Lucas desejou que todas as criaturas mágicas continuassem a viver em harmonia.",
+      "O dragão agradeceu e, com um rugido, voou para o alto das montanhas, guardando o vale de ameaças futuras. Lucas e Sofia, honrados pela aventura, voltaram para a vila como heróis, prontos para contar sua história a todos.",
+      "Desde aquele dia, o vale prosperou, e a lenda do dragão se tornou parte das histórias que eram contadas para inspirar outros aventureiros."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "A Jornada dos Exploradores do Arco-Íris",
+    "imagebanner": "assets/images/storyBanner4.webp",
+    "category": {
+      "id": 1,
+      "title": "Aventura"
+    },
+    "content": [
+      "Em uma pequena vila no sopé das colinas coloridas, dois amigos, Pedro e Ana, descobriram uma lenda sobre um vale escondido conhecido como 'O Vale do Arco-Íris'. Diziam que, neste vale, um arco-íris eterno iluminava o céu, e quem o encontrasse teria um desejo concedido pelo espírito guardião do arco-íris.",
+      "Com mochilas e coragem, Pedro e Ana partiram para essa aventura mágica. O primeiro desafio que enfrentaram foi atravessar o Rio da Névoa, onde as águas eram tão densas e nebulosas que nada se via além da neblina. Pedro lembrou que, segundo a lenda, a chave para cruzar o rio era cantar uma canção alegre. Ao cantar juntos, a neblina se dissipou e o caminho apareceu.",
+      "Depois de cruzar o rio, encontraram a Floresta das Sombras, onde árvores antigas guardavam segredos há muitos anos. Lá, eles conheceram um corvo falante chamado Kael, que lhes ofereceu uma dica: 'Sigam o caminho onde a luz brilha mais forte'. Assim, Pedro e Ana seguiram a direção indicada e encontraram uma passagem secreta entre as árvores.",
+      "No coração da floresta, chegaram a uma montanha de pedras coloridas, que formavam o arco-íris mais brilhante que já haviam visto. O arco-íris parecia quase mágico, e Pedro e Ana entenderam que estavam perto do Vale do Arco-Íris.",
+      "Para entrar no vale, precisaram resolver o enigma de uma esfinge guardiã. A esfinge perguntou: 'O que sempre caminha, mas nunca chega ao seu destino?' Ana, pensativa, respondeu: 'O tempo'. A esfinge, impressionada, permitiu que eles passassem e entrassem no Vale do Arco-Íris.",
+      "Dentro do vale, eles encontraram o espírito guardião, uma criatura majestosa feita de luz colorida. O guardião agradeceu a coragem e bondade dos amigos, e lhes ofereceu um desejo. Pedro desejou que todos na vila pudessem sempre ver o arco-íris no céu, e Ana desejou que todas as futuras aventuras fossem repletas de alegria.",
+      "O guardião realizou os desejos e, desde então, um arco-íris encantado iluminava o céu da vila todos os dias. Pedro e Ana voltaram para casa com corações cheios de alegria e uma promessa de nunca parar de explorar o mundo mágico ao seu redor.",
+      "E assim, os amigos continuaram suas aventuras, inspirando outros a seguirem seus próprios caminhos e acreditarem na magia que existe em cada jornada."
     ]
   }
 ]

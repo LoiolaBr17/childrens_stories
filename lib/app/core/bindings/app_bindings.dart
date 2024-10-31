@@ -1,3 +1,4 @@
+import 'package:childrens_stories/app/core/config/database/sqlite_connection_factory.dart';
 import 'package:childrens_stories/app/data/repositories/stories_repository.dart';
 import 'package:childrens_stories/app/data/repositories/stories_repository_impl.dart';
 import 'package:childrens_stories/app/data/services/stories_service.dart';
@@ -13,6 +14,9 @@ class AppBindings extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        Provider<SqliteConnectionFactory>(
+          create: (context) => SqliteConnectionFactory(),
+        ),
         Provider<StoriesRepository>(
           create: (context) => StoriesRepositoryImpl(),
         ),

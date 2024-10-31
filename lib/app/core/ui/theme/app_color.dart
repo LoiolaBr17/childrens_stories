@@ -13,8 +13,9 @@ class AppColors {
   Color get tertiary => const Color(0xFFF3F3F3);
   Color get grey => const Color(0xFF3A3A3A);
   Color get greyLight => const Color(0xFF838383);
-  Color get blue => const Color.fromARGB(255, 6, 4, 70);
+  Color get blue => const Color(0xFF87CEEB);
   Color get white => Colors.white;
+  Color get black => Colors.black;
 
   //theme dark
   Color get primaryDark => const Color.fromARGB(255, 66, 115, 206);
