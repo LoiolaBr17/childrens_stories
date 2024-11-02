@@ -94,8 +94,16 @@ class StoryCubit extends Cubit<StoryState> {
   }
 
   Future<void> resetAudio() async {
-    await _audioPlayer.setSourceDeviceFile(_audioFilePath);
-    emit(state.copyWith(audioStatus: AudioStatus.recorded));
+    final audioFile = File(_audioFilePath);
+    if (await audioFile.exists()) {
+      await _audioPlayer.setSourceDeviceFile(_audioFilePath);
+      emit(state.copyWith(audioStatus: AudioStatus.recorded));
+    } else {
+      emit(state.copyWith(
+        audioStatus: AudioStatus.initial,
+        errorMessage: 'Arquivo de áudio não encontrado.',
+      ));
+    }
   }
 
   @override

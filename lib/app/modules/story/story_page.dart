@@ -98,9 +98,10 @@ class _StoryPageState extends State<StoryPage> with WidgetsBindingObserver {
           ),
           BlocBuilder<StoryCubit, StoryState>(
             builder: (context, state) {
-              // Exibe o player de áudio somente se o áudio estiver gravado ou em reprodução
-              if (state.audioStatus == AudioStatus.recorded ||
-                  state.audioStatus == AudioStatus.playing) {
+              // Exibe o player de áudio quando está gravando, reproduzindo ou já gravado
+              if (state.audioStatus == AudioStatus.recording ||
+                  state.audioStatus == AudioStatus.playing ||
+                  state.audioStatus == AudioStatus.recorded) {
                 return Align(
                   alignment: Alignment.bottomCenter,
                   child: Container(
@@ -119,11 +120,19 @@ class _StoryPageState extends State<StoryPage> with WidgetsBindingObserver {
                           icon: const Icon(Icons.delete, color: Colors.white),
                         ),
                         IconButton(
-                          onPressed: () => _storyCubit.playAudio(),
+                          onPressed: () {
+                            if (state.audioStatus == AudioStatus.recording) {
+                              _storyCubit.stopRecording();
+                            } else {
+                              _storyCubit.playAudio();
+                            }
+                          },
                           icon: Icon(
                             state.audioStatus == AudioStatus.playing
                                 ? Icons.pause
-                                : Icons.play_arrow,
+                                : state.audioStatus == AudioStatus.recording
+                                    ? Icons.stop
+                                    : Icons.play_arrow,
                             color: Colors.green,
                           ),
                         ),
@@ -139,7 +148,7 @@ class _StoryPageState extends State<StoryPage> with WidgetsBindingObserver {
       ),
       floatingActionButton: BlocBuilder<StoryCubit, StoryState>(
         builder: (context, state) {
-          // Exibe o botão de gravação somente se o áudio ainda não foi gravado
+          // Exibe o botão de gravação somente se o áudio ainda não foi gravado ou não está em gravação
           if (state.audioStatus == AudioStatus.initial ||
               state.audioStatus == AudioStatus.error) {
             return FloatingActionButton(
