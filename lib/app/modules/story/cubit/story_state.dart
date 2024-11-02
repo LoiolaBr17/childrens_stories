@@ -3,10 +3,11 @@ part of 'story_cubit.dart';
 enum StoryStatus { initial, loading, loaded, error }
 
 enum AudioStatus {
-  loading, // Estado de carregamento de áudio
+  loading,
   initial,
   recording,
   recorded,
+  playing,
   deleted,
   error,
 }

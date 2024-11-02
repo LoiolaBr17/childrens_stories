@@ -4,8 +4,41 @@ import 'package:childrens_stories/app/core/extensions/size_extensions.dart';
 import 'package:childrens_stories/app/modules/story/cubit/story_cubit.dart';
 import 'package:childrens_stories/app/data/models/story_model.dart';
 
-class StoryPage extends StatelessWidget {
+class StoryPage extends StatefulWidget {
   const StoryPage({super.key});
+
+  @override
+  _StoryPageState createState() => _StoryPageState();
+}
+
+class _StoryPageState extends State<StoryPage> with WidgetsBindingObserver {
+  late StoryCubit _storyCubit;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _storyCubit =
+        context.read<StoryCubit>(); // Armazena uma referência ao StoryCubit
+    _storyCubit.resetAudio(); // Reinicia o áudio ao entrar na tela
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _storyCubit.stopAudio(); // Para o áudio ao sair da tela
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.inactive ||
+        state == AppLifecycleState.paused) {
+      _storyCubit.stopAudio(); // Pausa o áudio ao sair da tela
+    } else if (state == AppLifecycleState.resumed) {
+      _storyCubit.resetAudio(); // Reinicia o áudio ao retornar
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,8 +98,9 @@ class StoryPage extends StatelessWidget {
           ),
           BlocBuilder<StoryCubit, StoryState>(
             builder: (context, state) {
-              // Exibe o player de áudio somente se o áudio existir e não estiver carregando
-              if (state.audioStatus == AudioStatus.recorded) {
+              // Exibe o player de áudio somente se o áudio estiver gravado ou em reprodução
+              if (state.audioStatus == AudioStatus.recorded ||
+                  state.audioStatus == AudioStatus.playing) {
                 return Align(
                   alignment: Alignment.bottomCenter,
                   child: Container(
@@ -81,15 +115,17 @@ class StoryPage extends StatelessWidget {
                     child: Row(
                       children: [
                         IconButton(
-                          onPressed: () =>
-                              context.read<StoryCubit>().deleteAudio(),
+                          onPressed: () => _storyCubit.deleteAudio(),
                           icon: const Icon(Icons.delete, color: Colors.white),
                         ),
                         IconButton(
-                          onPressed: () =>
-                              context.read<StoryCubit>().playAudio(),
-                          icon:
-                              const Icon(Icons.play_arrow, color: Colors.green),
+                          onPressed: () => _storyCubit.playAudio(),
+                          icon: Icon(
+                            state.audioStatus == AudioStatus.playing
+                                ? Icons.pause
+                                : Icons.play_arrow,
+                            color: Colors.green,
+                          ),
                         ),
                       ],
                     ),
@@ -103,15 +139,15 @@ class StoryPage extends StatelessWidget {
       ),
       floatingActionButton: BlocBuilder<StoryCubit, StoryState>(
         builder: (context, state) {
-          // Exibe o botão de gravação somente se o áudio não existir e o áudio não estiver carregando
-          if (state.audioStatus != AudioStatus.recorded &&
-              state.audioStatus != AudioStatus.loading) {
+          // Exibe o botão de gravação somente se o áudio ainda não foi gravado
+          if (state.audioStatus == AudioStatus.initial ||
+              state.audioStatus == AudioStatus.error) {
             return FloatingActionButton(
               onPressed: () {
                 if (state.audioStatus == AudioStatus.recording) {
-                  context.read<StoryCubit>().stopRecording();
+                  _storyCubit.stopRecording();
                 } else {
-                  context.read<StoryCubit>().startRecording();
+                  _storyCubit.startRecording();
                 }
               },
               backgroundColor: state.audioStatus == AudioStatus.recording

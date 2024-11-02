@@ -22,6 +22,11 @@ class StoryCubit extends Cubit<StoryState> {
   Future<void> _initAudioPlayer() async {
     _audioPlayer = AudioPlayer();
     _audioPlayer.setReleaseMode(ReleaseMode.stop);
+    _audioPlayer.onPlayerComplete.listen((_) {
+      emit(state.copyWith(
+          audioStatus: AudioStatus
+              .recorded)); // Reset para o estado recorded ao fim do áudio
+    });
   }
 
   Future<void> _checkIfAudioExists() async {
@@ -42,7 +47,6 @@ class StoryCubit extends Cubit<StoryState> {
       return;
     }
 
-    // Inicia uma nova gravação e atualiza o estado para "recording"
     await _audioRecorder.start(RecordConfig(), path: _audioFilePath);
     emit(state.copyWith(
         audioStatus: AudioStatus.recording, audioPath: _audioFilePath));
@@ -59,17 +63,20 @@ class StoryCubit extends Cubit<StoryState> {
   }
 
   Future<void> playAudio() async {
-    await _audioPlayer.setSourceDeviceFile(_audioFilePath);
-    await _audioPlayer.resume();
-    emit(state.copyWith(audioStatus: AudioStatus.recorded));
+    if (state.audioStatus == AudioStatus.playing) {
+      await _audioPlayer.pause();
+      emit(state.copyWith(audioStatus: AudioStatus.recorded)); // Pausa o áudio
+    } else {
+      await _audioPlayer.setSourceDeviceFile(_audioFilePath);
+      await _audioPlayer.resume();
+      emit(state.copyWith(audioStatus: AudioStatus.playing)); // Toca o áudio
+    }
   }
 
   Future<void> deleteAudio() async {
     final file = File(_audioFilePath);
     if (await file.exists()) {
       await file.delete();
-
-      // Reinicializa o player para limpar qualquer cache do áudio anterior
       await _audioPlayer.release();
       _initAudioPlayer(); // Recria o player após liberação
 
@@ -78,6 +85,17 @@ class StoryCubit extends Cubit<StoryState> {
         audioPath: null,
       ));
     }
+  }
+
+  Future<void> stopAudio() async {
+    await _audioPlayer.stop();
+    emit(state.copyWith(
+        audioStatus: AudioStatus.recorded)); // Reseta o estado para recorded
+  }
+
+  Future<void> resetAudio() async {
+    await _audioPlayer.setSourceDeviceFile(_audioFilePath);
+    emit(state.copyWith(audioStatus: AudioStatus.recorded));
   }
 
   @override
